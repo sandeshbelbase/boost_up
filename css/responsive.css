@@ -9,8 +9,18 @@
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: #ffffff;
+    background-color: #1E7E51;
   } 
+  .top-contact ul li{
+    width: 185px;
+}
+.abt-wrapper:before{
+  bottom: -150px;
+}
+.service-box img{
+    margin: 0px auto 20px auto;
+    display: block;
+  }
   .menuWrapper{
     top: 67px;
   }
@@ -194,8 +204,8 @@
     border-right: none !important;
   }
   footer img {
-    margin: 10px 0px;
-    width: 80%;
+    padding: 20px 20px 0px 0px;
+    width: 50%;
   }
   .smallPost img {
     height: 250px;
