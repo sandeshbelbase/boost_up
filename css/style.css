@@ -34,7 +34,9 @@ ul li {
 img {
   width: 100%;
 }
-
+.logo button{
+  display: none;
+}
 .menuImg{
   display: none;
   height: 30px;
@@ -176,7 +178,7 @@ img {
   background: #F8F1DF;
   font-family: "Inter", sans-serif;
   width: 100%;
-  padding: 80px 0px;
+  padding: 40px 0px;
 }
 .service-wrap h2{
   color: #2D4149;

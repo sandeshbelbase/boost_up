@@ -1,250 +1,58 @@
-@media (max-width: 1200px) {
-  .menuWrapper .menu ul {
-    -moz-column-gap: 28px;
-         column-gap: 28px;
-  }
-}
-@media (max-width: 991px) {
-  .top-head{
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    background-color: #1E7E51;
-  } 
-  .top-contact ul li{
-    width: 185px;
-}
-.abt-wrapper:before{
-  bottom: -150px;
-}
-.service-box img{
-    margin: 0px auto 20px auto;
-    display: block;
-  }
-  .menuWrapper{
-    top: 67px;
-  }
-  .imgMenu{
-    display: none;
-  }
-  .menu button:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  .menu button {
-    display: block;
-    color: #fff;
-    font-size: 20px;
-  }
-  .menu ul {
-    display: none !important;
-  }
-  .offcanvas ul {
-    display: flex;
-    flex-direction: column;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .offcanvas ul li {
-    padding: 10px 0px;
-    border-bottom: 1px solid #d5d5d5;
-  }
-  .offcanvas ul a {
-    font-size: 22px;
-    color: #463b82;
-  }
-  .mainWrapper h3 a {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1;
-  }
-  .mainWrapper .subPost a {
-    font-size: 14px;
-  }
-  .recent h3 {
-    padding: 0px;
-    font: 22px;
-  }
-  .recent .post {
-    padding: 6px 0px;
-  }
-  .recent .post h6 {
-    line-height: 1;
-    font-size: 14px;
-  }
-  .recent .post p {
-    font-size: 14px;
-  }
-  .recent .post h7 {
-    line-height: 0 !important;
-    font-size: 14px;
-  }
-  .educationnews .smallPost h7 {
-    font-size: 14px;
-  }
-  .educationBlog h4 {
-    font-size: 18px;
-  }
-  .educationBlog h5 {
-    line-height: 1;
-    font-size: 14px;
-  }
-  .meta {
-    -moz-column-gap: 12px;
-         column-gap: 12px;
-  }
-  .trueStory .storyContent {
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-  }
-  .trueStory .storyContent h3 {
-    line-height: 1.6;
-    font-size: 18px !important;
-  }
-  .trueStory .storyContent p {
-    font-size: 15px;
-  }
-  .pstImg .imgContent a {
-    font-size: 15px;
-  }
-  .pstImg .imgContent h5 {
-    line-height: 16px;
-  }
-  footer .logo img {
-    width: 50%;
-  }
-  footer .footerContent h3 {
-    font-size: 16px;
-  }
-  footer .footerContent .latest a {
-    display: block;
-    font-size: 13px;
-    padding: 5px 0px;
-  }
-  footer .footerContent .usefulLinks {
-    font-size: 12px;
-  }
-}
+
 @media (max-width: 768px) {
-  .menuWrapper{
-    top:60px
+  .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .logo button{
+    display: block;
   }
-  .logo {
-    text-align: center;
+  .nav-wrap{
+    display: none;
+  } 
+  button svg{
+    color :#fff;
+    font-size: 32px;
   }
-  .logo img {
+  .offcanvas{
     width: 50% !important;
   }
-  .header-ad {
-    display: none;
+  .nav_bar_toggle ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top:18%;
   }
-  header .social {
-  justify-content:flex-end;
+
+
+.nav_bar_toggle ul li a{
+    color: #1E7E51;
+    text-decoration: none;
+    padding: 20px;
 }
-  
-  .social {
-   display: none;
-  }
-  .social svg {
-    font-size: 14px !important;
-  }
-  .mainWrapper p {
-    padding: 0px;
-    line-height: 20px;
-  }
-  .mainWrapper .meta {
-    margin-bottom: 10px;
-  }
-	.mainWrapper .subPost img{
-		height:auto;
-	}
-  .post button {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .long-ad {
-    margin: 10px 0px;
-  }
-  .educationnews .smallPost {
-    margin: 10px 0px;
-  }
-  .educationBlog .meta {
-    margin-bottom: 20px;
-  }
-  .educationBlog .secondPost {
-    margin: 10px 0px;
-    border-bottom: 1px solid #d5d5d5;
-  }
-  .educationBlog .secondPost p {
+  .top-contact{
     display: none;
   }
-  .educationBlog .secondPost img {
-    margin: 10px 0px;
-    height: 240px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    float: unset;
+  .top-head{
+    padding: 10px 0px;
   }
-	.educationBlog .secondPost.secondPost-bottom h5 a{
-    font-size: 20px;
+  .abt-wrapper{
+    padding: 24px 0px;
+  }
+  .abt-wrapper::before{
+    display: none;
+  }
+  .service-box{
+    padding: 16px;
+  }
+  .test-wrap{
+    padding: 30px 0px;
+  }
+  .footer-bottom img{
+    height: 20px;
+    width: max-content;
     margin-top: 10px;
-    line-height: 30px;}
-  .trueStory img {
-    height: 250px;
-  }
-  .usefulLinks {
-    padding: 10px 0px !important;
-    border-top: 1px solid #39739E;
-    border-bottom: 1px solid #39739E;
-    border-left: none !important;
-    border-right: none !important;
-  }
-  footer img {
-    padding: 20px 20px 0px 0px;
-    width: 50%;
-  }
-  .smallPost img {
-    height: 250px;
-  }
-
-  .pstImg{
-    margin: 10px 0px;
-  }
-	.singlePost .maintitle{
-    padding: 15px;
-	}
-	.singlePost .maintitle h4{
-    font-size: 30px;
-    line-height: 35px;
-	}
-	.mainCategory .mainPost{
-		margin-bottom:20px;
-	}
-	.mainPost.mainPost-small img{
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    margin-right: 0px;
-	}
-	.metaSecond {
-    font-size: 13px;
-}
-}
-@media (max-width: 491px) {
-  .offcanvas {
-    width: 70% !important;
-  }
-	.menuWrapper{
-    top: 50px;
-  }
-}/*# sourceMappingURL=responsive.css.map */
-
-@media (max-width: 360px) {
-	.menuWrapper{
-    top: 44px;
   }
 }
