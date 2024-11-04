@@ -14,8 +14,25 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-<link href="css/skdslider.css" rel="stylesheet">
 
+<!-- adding slick slider -->
+<link
+rel="stylesheet"
+type="text/css"
+href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+/>
+<link
+rel="stylesheet"
+type="text/css"
+href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JavaScript -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+></script>
 </head>
 <body>
 
@@ -96,17 +113,31 @@
 </div>
 <!------------- Slider ------------>
 
-<div class="slider-wrapper">
- <div id="demo1">
-      <div class="slide">
+ <!-- <div id="demo1"> -->
+  <div class="slider-wrapper">
+      <div class="slideone">
         <img src="images/1.jpg" />
         <!--Slider Description example-->
-         <div class="slide-desc">
-            <h3>Service with Professional touch</h3>
-        </div>
-     </div>
-</div>
-</div>
+      </div>
+    <div class="slideone">
+    <img src="images/2.jpg" />
+    <!--Slider Description example-->
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".slider-wrapper").slick({
+        autoplay: true, // Enable auto-play
+        autoplaySpeed: 2000, // Set auto-play speed (in ms)
+        dots: false, // Show navigation dots
+        arrows: true, // Show navigation arrows
+        infinite: true, // Enable infinite looping
+        slidesToShow: 1, // Number of slides to show
+        slidesToScroll: 1, // Number of slides to scroll
+      });
+    });
+  </script>
+<!-- </div> -->
 <!------------- Slider ------------>
 <!------------------ about ---------------------------->
 
@@ -141,23 +172,27 @@
 
       <div class="col-md-4">
         <div class="service-box">
-          <img src="images/1.png">
-          <h3><a href="#">Home & Commercial cleaning </a></h3>
-          <p>Commercial cleaning services can help homeowners and businesses save money and increase efficiency. </p>
+          <a href="./services/construction..html">
+            <img src="images/1.png">
+            <h3>Renovation and construction cleaning.</h3>
+          </a>
+          <p>BOOSTUP CLEANING SERVICE offers professional post-renovation and construction cleaning, removing dust, debris, and residue from all surfaces. </p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="service-box">
+          <a href="bond.html"></a>
           <img src="images/2.png">
-          <h3><a href="#">Office/ Workplace cleaning</a></h3>
-          <p>Regularly cleaning frequently used areas can help promote a healthier work environment.</p>
+          <h3>Bond cleaning</h3>
+          <p>BOOSTUP CLEANING SERVICE provides comprehensive bond cleaning to ensure your property meets the highest standards for end-of-lease inspections.</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="service-box">
+          <a href="./services/event.html"></a>
           <img src="images/3.png">
-          <h3><a href="#">Interior / Exterior window Cleaning</a></h3>
-          <p>Interior window cleaning focuses on removing dust, smudges, from the inside surface of windows.</p>
+          <h3>Event cleaning</h3>
+          <p>BOOSTUP CLEANING SERVICE offers comprehensive event cleaning services, ensuring your venue is impeccably maintained before, during, and after any occasion.</p>
         </div>
       </div>
       <a href="./services.html" class="clean-btn">See All Services</a>
@@ -176,157 +211,115 @@
   <section class="test-wrap">
   <div class="container">
     <div class="row">
-    
-    <div class="col-md-9">
+      <div class="col-md-9">
     <!---- test block --->
 
+        <div id="mixedSlider">
+          <div class="MS-content">
+        <div class="item test-block">
+          <div class="imgTitle">
+            <h3>Good Cleaning Service</h3>
+              <p>Exceptional end-of-lease cleaning service! The team went above and beyond to ensure every corner was spotless. Professional, efficient, and highly recommended for anyone moving out. 5 stars!</p>
+                <img src="images/test1.png">
+                
+                <ul class="test-meta">
+                  <li>Mohammed Yousuf Shareef</li>
+                  <li>Jan 2024</li>
+                </ul>
 
+          </div>
+      </div>
+      <div class="item test-block">
+          <div class="imgTitle">
+            <h3>Great Work</h3>
+              <p>Great work. Fast turnaround time from initial contact. Whole team of cleaners thoroughly cleaned my vacant villa. Will use again.</p>
+                <img src="images/test.png">
+                
+                <ul class="test-meta">
+                  <li>Alina Lora</li>
+                  <li>Formar Manager</li>
+                </ul>
+                
+          
+          </div>
+      </div>
+      <div class="item test-block">
+          <div class="imgTitle">
+            <h3>Very Good Cleaning Service</h3>
+              <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
+                <img src="images/test.png">
+                
+                <ul class="test-meta">
+                  <li>David Fletcher</li>
+                  <li>Jan 2024</li>
+                </ul>
+                
+          
+          </div>
+      </div>
+      <div class="item test-block">
+          <div class="imgTitle">
+            <h3>Quick response and service</h3>
+              <p>Their attention to details and customer requirements is just exemplary. I would highly recommend them to anyone for any cleaning jobs.</p>
+                <img src="images/test2.png">
+                
+                <ul class="test-meta">
+                  <li>Phil Gitau</li>
+                  <li>December 2023</li>
+                </ul>
+                
+          
+          </div>
+      </div>
+      <div class="item test-block">
+          <div class="imgTitle">
+            <h3>Marvelous job at my place</h3>
+              <p>They left it sparkling clean and very immaculate. I love their timeliness, commitment and dedication to offering top notch cleaning services to their customers.
+              </p>
+                <img src="images/test3.png">
+                <ul class="test-meta">
+                  <li>Edwin Edrulo</li>
+                  <li>Nov 2023</li>
+                </ul>
+          </div>
+      </div>
+           </div>
+        </div>
 
-<div id="mixedSlider">
-              <div class="MS-content">
-            
-  
-                        <div class="item test-block">
-                            <div class="imgTitle">
-                              <h3>Good Cleaning Service</h3>
-                                <p>Exceptional end-of-lease cleaning service! The team went above and beyond to ensure every corner was spotless. Professional, efficient, and highly recommended for anyone moving out. 5 stars!</p>
-                                  <img src="images/test1.png">
-                                  
-                                  <ul class="test-meta">
-                                    <li>Mohammed Yousuf Shareef</li>
-                                    <li>Jan 2024</li>
-                                  </ul>
-
-                            </div>
-                        </div>
-            
-  
-                        <div class="item test-block">
-                            <div class="imgTitle">
-                              <h3>Great Work</h3>
-                                <p>Great work. Fast turnaround time from initial contact. Whole team of cleaners thoroughly cleaned my vacant villa. Will use again.</p>
-                                  <img src="images/test.png">
-                                  
-                                  <ul class="test-meta">
-                                    <li>Alina Lora</li>
-                                    <li>Formar Manager</li>
-                                  </ul>
-                                  
-                            
-                            </div>
-                        </div>
-            
-  
-                        <div class="item test-block">
-                            <div class="imgTitle">
-                              <h3>Very Good Cleaning Service</h3>
-                                <p>5 stars for design quality, but also for prompt new customer service and great attention to details work.</p>
-                                  <img src="images/test.png">
-                                  
-                                  <ul class="test-meta">
-                                    <li>David Fletcher</li>
-                                    <li>Jan 2024</li>
-                                  </ul>
-                                  
-                            
-                            </div>
-                        </div>
-            
-  
-                        <div class="item test-block">
-                            <div class="imgTitle">
-                              <h3>Quick response and service</h3>
-                                <p>Their attention to details and customer requirements is just exemplary. I would highly recommend them to anyone for any cleaning jobs.</p>
-                                  <img src="images/test2.png">
-                                  
-                                  <ul class="test-meta">
-                                    <li>Phil Gitau</li>
-                                    <li>December 2023</li>
-                                  </ul>
-                                  
-                            
-                            </div>
-                        </div>
-            
-  
-                        <div class="item test-block">
-                            <div class="imgTitle">
-                              <h3>Marvelous job at my place</h3>
-                                <p>They left it sparkling clean and very immaculate. I love their timeliness, commitment and dedication to offering top notch cleaning services to their customers.
-                                </p>
-                                  <img src="images/test3.png">
-                                  <ul class="test-meta">
-                                    <li>Edwin Edrulo</li>
-                                    <li>Nov 2023</li>
-                                  </ul>
-                                  
-                            
-                            </div>
-                        </div>
-
-                       
-                    </div>
-
-                   <!--- <div class="MS-controls">
-                        <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                        <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                    </div>--->
-                </div>
-
-</div>
-
+      </div>
     <!---- text block --->
-
-
       <div class="col-md-3">
         <div class="test-title">
         <h3>Testimonial</h3>
         <h2>The cleaner came within the time frame.</h2>
       </div>
-    </div>
-
-
+      </div>
   </div>
-
-
-
-
     </div>
   </div>
   </section>
 
   <!--------------- Test ------------------------>
-
-
-
-
-
 <div class="estimate">
   <div class="container">
     <div class="row">
-    	
     		<div class="col-md-8">
     	<div class="estimate-left">
     	<h2>Get started with your free estimate</h2>
-		<p>Tell us about your home, and get a price with consultation</p>
+		  <p>Tell us about your home, and get a price with consultation</p>
       	</div>
       </div>
-
       <div class="col-md-4">
     	<div class="estimate-right">
     		<a href="./contact.html" class="btn">Get Free Estimate</a>
     	</div>
     </div>
-
     </div>
   </div>
 </div>
 
-
-
-
+<!-- footer starts here -->
     <footer>
-   
     <div class="container">
       <div class="footerContent">
         <div class="row">
@@ -391,39 +384,12 @@
 
     </div>
   </footer>
-
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/skdslider.min.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function(){
-        jQuery('#demo1').skdslider({
-          slideSelector: '.slide',
-          delay:6000,
-          animationSpeed:3000,
-          showNextPrev:true,
-          showPlayButton:true,
-          autoSlide:true,
-          animationType:'fading'
-        });
-
-    });
-</script>
+  <script src="./js/slider.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
     integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="js/multislider.js"></script> 
-<script src="js/skdslider.min.js"></script> 
-
-<script>
-    $('#mixedSlider').multislider({
-      duration: 750,
-      interval: 3000
-    });
-</script>
-
 </body>
 </html>

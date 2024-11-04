@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <h3>Grout Cleaning</h3>
+    <div class="your-slider-class">
+      <div><img src="image1.jpg" alt="Slide 1" /></div>
+      <div><img src="image2.jpg" alt="Slide 2" /></div>
+      <div><img src="image3.jpg" alt="Slide 3" /></div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".your-slider-class").slick({
+          autoplay: true, // Enable auto-play
+          autoplaySpeed: 2000, // Set auto-play speed (in ms)
+          dots: true, // Show navigation dots
+          arrows: true, // Show navigation arrows
+          infinite: true, // Enable infinite looping
+          slidesToShow: 1, // Number of slides to show
+          slidesToScroll: 1, // Number of slides to scroll
+        });
+      });
+    </script>
+  </body>
+</html>

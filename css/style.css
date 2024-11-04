@@ -118,6 +118,7 @@ img {
   float: left;
   width: 100%;
 }
+
 .texture {
     position: absolute;
     /* top: 0px; */
@@ -1428,4 +1429,15 @@ textarea{
 }
 #pass{
     height: 101px;
+}
+
+/* Service Detail */
+
+.servicedetail{
+  margin: 40px 0px;
+  padding-top: 20px;
+}
+
+.servicedetail p{
+  font-size: 18px;
 }
