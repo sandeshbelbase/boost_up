@@ -215,6 +215,10 @@ img {
   font-weight: 400;
 }
 
+.service-box:hover{
+  background-color: #eeeeee;
+}
+
 .test-wrap{
   float: left;
   width: 100%;
